@@ -1,0 +1,174 @@
+# =========================
+# CIAG-DX v5.8 .gitignore
+# =========================
+
+# -------------------------
+# Python
+# -------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# -------------------------
+# Virtual environments
+# -------------------------
+venv/
+.env/
+.venv/
+env/
+ENV/
+
+# -------------------------
+# Build / Distribution
+# -------------------------
+build/
+dist/
+.eggs/
+*.egg-info/
+*.egg
+
+# -------------------------
+# Pytest / Coverage
+# -------------------------
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.cache/
+
+# -------------------------
+# Mypy / Ruff / Lint
+# -------------------------
+.mypy_cache/
+.ruff_cache/
+.dmypy.json
+
+# -------------------------
+# Runtime CIAG
+# -------------------------
+runtime/
+runtime_state/
+runtime_cache/
+runtime_tmp/
+runtime_locks/
+
+# -------------------------
+# Logs
+# -------------------------
+logs/
+*.log
+
+# -------------------------
+# CIAG Artifacts
+# -------------------------
+artifacts/
+audit_exports/
+forensic_exports/
+trace_exports/
+reports/
+
+# -------------------------
+# Temporary JSON outputs
+# -------------------------
+tmp_json/
+temp_json/
+*.tmp.json
+
+# -------------------------
+# Certification outputs
+# -------------------------
+certification_reports/
+ciag_terminal_output/
+ciag_runtime_snapshots/
+
+# -------------------------
+# Observability
+# -------------------------
+metrics/
+traces/
+telemetry/
+
+# -------------------------
+# Jupyter
+# -------------------------
+.ipynb_checkpoints/
+
+# -------------------------
+# VSCode
+# -------------------------
+.vscode/
+
+# -------------------------
+# PyCharm
+# -------------------------
+.idea/
+
+# -------------------------
+# MacOS
+# -------------------------
+.DS_Store
+
+# -------------------------
+# Windows
+# -------------------------
+Thumbs.db
+
+# -------------------------
+# Environment secrets
+# -------------------------
+.env.local
+.env.production
+.env.secret
+
+# -------------------------
+# Railway
+# -------------------------
+railway.toml.local
+
+# -------------------------
+# API Keys / Secrets
+# -------------------------
+secrets/
+keys/
+*.pem
+*.key
+
+# -------------------------
+# Database
+# -------------------------
+*.sqlite3
+*.db
+
+# -------------------------
+# Temporary exports
+# -------------------------
+exports/tmp/
+exports/debug/
+
+# -------------------------
+# Large datasets
+# -------------------------
+datasets/
+samples/
+training_data/
+
+# -------------------------
+# CIAG Internal sandbox
+# -------------------------
+sandbox/
+experiments/
+prototype/
+research/
+
+# -------------------------
+# OS generated
+# -------------------------
+desktop.ini
+
+# -------------------------
+# NEVER PUSH
+# -------------------------
+*.env
+*.token
+*.secret
+*.credentials
