@@ -1,444 +1,96 @@
-README.md — CIAG
+# CIAG
+### Constitución de Inteligencia Artificial Global
 
-1. CIAG
+**CIAG GitHub Public — Versión 1.0**
 
-Constitutional Intelligence Architecture Global
+**Sistema de gobernanza computacional determinista para Inteligencia Artificial y software empresarial.**
 
-CIAG is a deterministic governance architecture designed for enterprise, governmental, banking, legal, forensic, and critical infrastructure environments.
-
-The project is focused on:
-
-- deterministic execution
-
-- governance enforcement
-
-- traceability
-
-- auditability
-
-- semantic consistency
-
-- fail-fast validation
-
-- pipeline orchestration
-
-- runtime integrity
-
-- certification systems
-
-- JSON contract validation
-
-- enterprise diagnostic and resolution workflows
-
-
-CIAG is not designed as a conventional probabilistic AI assistant.
-
-Its purpose is to act as a governance infrastructure capable of:
-
-- diagnosing systems
-
-- validating execution flows
-
-- enforcing constitutional rules
-
-- orchestrating certified pipelines
-
-- generating auditable outputs
-
-- resolving ambiguity into deterministic decisions
-
-
-
-====================
-
-2. Current Project Status
-
-The architecture is currently under active development.
-
-CIAG is being built progressively through:
-
-- architectural consolidation
-
-- governance standardization
-
-- deterministic runtime modeling
-
-- layered execution design
-
-- certification infrastructure
-
-- enterprise contract orchestration
-
-- JSON forensic pipelines
-
-- CIAG-DX and CIAG-CORE integration
-
-
-Some internal systems remain experimental or incomplete.
-
-The public repository may not reflect the complete internal architecture.
-
-
-======================
-
-3. Main Components
-
-CIAG-DX
-
-CIAG-DX is the diagnostic engine.
-
-Primary responsibilities:
-
-- diagnostics
-
-- validation
-
-- traceability
-
-- risk analysis
-
-- governance enforcement
-
-- certification
-
-- orchestration
-
-- audit generation
-
-
-==========================
-
-4. CIAG-CORE
-
-CIAG-CORE is the resolution and execution engine.
-
-Primary responsibilities:
-
-- solution generation
-
-- deterministic execution
-
-- controlled remediation
-
-- enterprise response workflows
-
-- governance-aligned resolution pipelines
-
-
-
-========================
-
-5. Enterprise Workflow
-
-The intended enterprise workflow is:
-	
-_____________________________________
-
-Enterprise JSON Input
-        ↓
-Railway Runtime
-        ↓
-CIAG-DX
-        ↓
-CIAG-CORE
-        ↓
-Governance Validation
-        ↓
-Final Certified JSON Output
-
-____________________________________
-
-The final product of the architecture is:
-
-- deterministic JSON outputs
-
-- traceable decisions
-
-- auditable diagnostics
-
-- governed resolutions
-
-- enterprise-ready evidence
-
-
-===============================
-
-6. JSON Contract Types
-
-a. contrato_archive
-
-Used for:
-
-- diagnostics only
-
-- auditing
-
-- verification
-
-- traceability workflows
-
-
-b. licitacion_archive
-
-Used for:
-
-- diagnostics
-
-- solution generation
-
-- governance remediation
-
-- enterprise execution workflows
-
-=================================
-
-7. Architectural Principles
-
-a. Determinism
-
-Outputs must remain reproducible.
-
+> ⚠️ **Nota sobre esta versión:** este repositorio se encuentra en su primera versión pública (v1.0). El contenido está sujeto a cambios y actualizaciones a medida que el proyecto CIAG avance en su implementación real con empresas, en base a la realidad operativa del sistema. La información aquí publicada refleja el estado conceptual y arquitectónico actual del proyecto, no un producto ya desplegado en producción a gran escala.
 
 ---
 
-b. Governance First
+## Tabla de contenidos
 
-Every module must obey constitutional governance.
-
-
----
-
-c. Semantic Identity
-
-The architecture validates semantic consistency rather than positional consistency.
-
+- [¿Qué es CIAG?](#qué-es-ciag)
+- [Principios fundamentales](#principios-fundamentales)
+- [Documentación pública](#documentación-pública)
+- [Estado del proyecto](#estado-del-proyecto)
+- [Autoría](#autoría)
+- [Contacto](#contacto)
+- [Licencia y propiedad intelectual](#licencia-y-propiedad-intelectual)
 
 ---
 
-d. Fail-Fast Enforcement
+## ¿Qué es CIAG?
 
-Invalid states must stop execution immediately.
+**CIAG no es un modelo de IA.** Es una capa de gobernanza computacional que supervisa, valida y certifica el comportamiento de sistemas de software e inteligencia artificial, transformando resultados probabilísticos en decisiones deterministas, auditables y trazables.
 
+CIAG se integra junto a los sistemas de IA y software que una empresa ya utiliza, **sin reemplazarlos**. Su función es analizar, diagnosticar y —cuando corresponde— ayudar a corregir el comportamiento de esos sistemas bajo reglas fijas, verificables y reproducibles, comunicándose siempre mediante contratos computacionales en formato **JSON**.
 
----
+> La misma entrada, bajo las mismas condiciones, siempre debe producir el mismo resultado.
 
-e. Traceability
-
-All decisions must be auditable.
-
+Más información conceptual en [`ciag_overview.md`](ciag_overview.md).
 
 ---
 
-f. Layer Isolation
+## Principios fundamentales
 
-Architectural layers remain separated.
-
+| Principio | En qué consiste |
+|---|---|
+| **Determinismo** | Mismo input + mismo contexto = mismo output, siempre. |
+| **Gobernanza** | Reglas fijas y no negociables; la autoridad de decisión final es siempre humana. |
+| **Trazabilidad** | Cada operación queda identificada y puede reconstruirse en cualquier momento. |
+| **Auditabilidad** | Toda decisión genera evidencia verificable, lista para revisión interna o externa. |
+| **Separación de responsabilidades** | Diagnóstico (CIAG-DX) y solución (CIAG-CORE) son subsistemas independientes. |
+| **Protección de datos** | La información se procesa exclusivamente dentro del alcance autorizado por cada contrato. |
 
 ---
 
-g. Pipeline Integrity
+## Documentación pública
 
-Execution order is governed and audited.
+Este repositorio contiene documentación de alto nivel sobre la arquitectura, filosofía y principios de gobernanza de CIAG. Por razones de propiedad intelectual y seguridad, **no incluye código fuente, estructuras internas de contratos, ni detalles de implementación**.
 
+| # | Documento | Contenido |
+|---|---|---|
+| 1 | [`ciag_overview.md`](ciag_overview.md) | Qué es CIAG y qué problema resuelve |
+| 2 | [`ciag_determinism.md`](ciag_determinism.md) | El principio de determinismo y por qué es central |
+| 3 | [`ciag_layers.md`](ciag_layers.md) | Resumen general de las capas del sistema |
+| 4 | [`ciag_pipeline.md`](ciag_pipeline.md) | Flujo general de procesamiento |
+| 5 | [`ciag_architecture.md`](ciag_architecture.md) | CIAG-DX (diagnóstico) y CIAG-CORE (solución) |
+| 6 | [`ciag_governance.md`](ciag_governance.md) | Principios de gobernanza y rol del ser humano |
+| 7 | [`ciag_json_contracts.md`](ciag_json_contracts.md) | Contratos computacionales JSON, a nivel conceptual |
+| 8 | [`ciag_regulatory_compliance.md`](ciag_regulatory_compliance.md) | Alineación con marcos regulatorios internacionales |
+| 9 | [`ciag_automated_audit.md`](ciag_automated_audit.md) | Qué es la auditoría automática y sus beneficios |
+| 10 | [`ciag_security_model.md`](ciag_security_model.md) | Principios generales de seguridad |
+| 11 | [`ciag_ai_assistant_role.md`](ciag_ai_assistant_role.md) | Rol de la IA asistente en la implementación empresarial |
+| 12 | [`ciag_runtime_model.md`](ciag_runtime_model.md) | Estados operativos del sistema, a nivel conceptual |
+| 13 | [`ciag_enterprise_use_cases.md`](ciag_enterprise_use_cases.md) | Casos de uso por sector |
+| 14 | [`ciag_contact.md`](ciag_contact.md) | Canales oficiales de contacto |
 
-=======================================
+> 📌 Esta lista se irá ampliando conforme el proyecto avance.
 
-8. High-Level Layer Architecture
+---
 
-Layer 0  - Foundation
-Layer 1  - Normalization
-Layer 2  - Semantic Interpretation
-Layer 3  - Risk Evaluation
-Layer 4  - Memory & Profiling
-Layer 5  - Threat Intelligence
-Layer 6  - Prediction
-Layer 7  - Correlation
-Layer 8  - Active Defense
-Layer 9  - Autonomous Response
-Layer 10 - Governance
-Layer 11 - Forensic & Legal
-Layer 12 - Observability
-Layer 13 - Output
-Layer 14 - Interface
-Layer 15 - Contract Orchestration
-Layer 16 - JSON Contracts
+## Estado del proyecto
 
+CIAG se encuentra en fase de consolidación arquitectónica y primeras implementaciones empresariales. El sistema está registrado ante la **Dirección Nacional de Derecho de Autor (DNDA)** de Colombia.
 
-======================================
+---
 
-9. Universal CIAG Modules
+## Autoría
 
-The architecture includes universal foundational modules intended to standardize:
+CIAG es un proyecto de investigación y desarrollo tecnológico creado y dirigido por **Yonatan Fernando Ramírez Becerra**.
 
-- governance flows
+Perfil profesional: [linkedin.com/in/yonatan-fernando-ia](https://www.linkedin.com/in/yonatan-fernando-ia)
 
-- pipeline integration
+---
 
-- certification structures
+## Contacto
 
-- runtime alignment
+Para consultas comerciales, licitaciones o alianzas, ver los canales oficiales en [`ciag_contact.md`](ciag_contact.md).
 
-- module orchestration
+---
 
-- test integration
+## Licencia y propiedad intelectual
 
-
-Examples:
-
-universal_CIAG/
-├── estandar_universal_modulos_CIAG.py
-├── modulos_universales_especializados_CIAG.py
-├── modulos_universales_especializados_runtime_CIAG.py
-├── modulos_universales_especializados_governance_CIAG.py
-└── modulos_universales_especializados_certification_CIAG.py
-
-
-===============================
-
-10. Certification Philosophy
-
-CIAG treats certification as a constitutional process.
-
-Certification includes:
-
-- runtime validation
-
-- governance alignment
-
-- deterministic verification
-
-- threshold enforcement
-
-- pipeline auditing
-
-- traceability validation
-
-- security enforcement
-
-- cross-layer integrity
-
-
-
-======================================
-
-11. Testing Philosophy
-
-CIAG uses layered testing:
-
-smoke/
-runtime/
-pipeline/
-traceability/
-integration/
-layers/
-deep/
-performance/
-security/
-certification/
-
-The objective is not only functional correctness.
-
-The objective is:
-
-- constitutional consistency
-
-- deterministic behavior
-
-- governance integrity
-
-- runtime reliability
-
-================================
-
-12. Repository Structure
-
-___________________________________
-
-C-DX-engine/
-├── universal_CIAG/
-├── layer_0_foundation/
-├── layer_0_runtime/
-├── layer_1_normalization/
-├── layer_2_semantic/
-├── layer_3_risk/
-├── layer_4_memory/
-├── layer_5_threat/
-├── layer_6_prediction/
-├── layer_7_correlation/
-├── layer_8_defense/
-├── layer_9_response/
-├── layer_10_governance/
-├── layer_11_forensic/
-├── layer_12_observability/
-├── layer_13_output/
-├── layer_14_interface/
-├── layer_15_contract_orchestration/
-└── layer_16_json_contracts/
-
-________________________________________
-
-===================================
-
-13. Intended Use Cases
-
-CIAG is intended for:
-
-- enterprise governance
-
-- banking compliance
-
-- legal auditing
-
-- software diagnostics
-
-- forensic pipelines
-
-- governmental workflows
-
-- traceability systems
-
-- regulated infrastructures
-
-- critical execution environments
-
-====================================
-
-14. Important Notice
-
-This repository may contain:
-
-- experimental systems
-
-- architectural transitions
-
-- incomplete integrations
-
-- active refactors
-
-- internal governance models under development
-
-
-The architecture evolves progressively.
-
-=================================
-
-15. Development Philosophy
-
-CIAG is being developed under the principle:
-
-> probabilistic intelligence controlled by deterministic infrastructure
-
-
-
-The objective is not unrestricted AI autonomy.
-
-The objective is governed intelligence.
-
-
-============================
-
-16. Contributors
-
-Currently under active architectural development.
-
-Additional public contribution policies may be defined in the future.
+Todos los derechos reservados. Este repositorio contiene documentación pública descriptiva de la arquitectura CIAG. El código fuente, los contratos computacionales detallados, las reglas de gobernanza internas y la metodología de construcción **no son de acceso público**.
