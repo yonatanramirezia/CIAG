@@ -1,8 +1,8 @@
 # CIAG — ¿Qué es?
 
-### CIAG GitHub Public — Versión 1.0
+### CIAG GitHub Public — Versión 1.2
 
-> ⚠️ **Nota sobre esta versión:** este documento forma parte de la primera versión pública (v1.0) del repositorio CIAG. Su contenido está sujeto a cambios y actualizaciones a medida que el proyecto avance en su implementación real con empresas, en base a la realidad operativa del sistema. Lo aquí descrito refleja el estado conceptual y arquitectónico actual del proyecto.
+> ⚠️ **Nota sobre esta versión:** este documento forma parte de la versión pública 1.2 del repositorio CIAG, actualizada el 26 de octubre de 2026: se amplía a 23 tipos de empresa y se agregan la misión y visión del proyecto y los canales públicos. El servicio .JSON ya responde en el servidor real. El contenido puede seguir cambiando a medida que el proyecto avance con empresas, en base a la realidad operativa del sistema.
 
 ---
 
@@ -12,7 +12,7 @@ CIAG (Constitución de Inteligencia Artificial Global) es un sistema de gobernan
 
 Su función es transformar resultados inciertos o probabilísticos en resultados verificables, trazables y deterministas, ayudando a que las organizaciones puedan confiar en la información que utilizan para tomar decisiones.
 
-CIAG no reemplaza el software ni la inteligencia artificial que una empresa ya utiliza. Funciona como una capa adicional de supervisión que se integra con los sistemas existentes para revisar, validar y certificar sus resultados, de modo que la empresa conserva sus plataformas actuales mientras incorpora un mecanismo de control y confiabilidad sobre sus procesos críticos.
+CIAG no reemplaza el software ni la inteligencia artificial que una empresa ya utiliza. Funciona como una capa adicional de supervisión que se integra con los sistemas existentes para revisar y validar sus resultados, de modo que la empresa conserva sus plataformas actuales mientras incorpora un mecanismo de control y confiabilidad sobre sus procesos críticos.
 
 ---
 
@@ -70,6 +70,17 @@ Esto le permite a una organización obtener, de forma automática, un diagnósti
 El servicio de CIAG se despliega actualmente sobre infraestructura en la nube, utilizando **Railway** como plataforma de orquestación y ejecución.
 
 La arquitectura de CIAG fue diseñada para no depender de forma permanente de un único proveedor de infraestructura. Si en el futuro resulta conveniente o necesario migrar hacia otra plataforma, la arquitectura está preparada para adaptarse a esos cambios, manteniendo la misma gobernanza, los mismos principios deterministas y el mismo comportamiento del sistema, independientemente de dónde se ejecute.
+
+---
+
+## Estado actual del servicio
+
+- **El servicio .JSON ya funciona en el servidor real.** La empresa envía su archivo `CIAG_INPUT.json` y recibe, en la misma respuesta, el resultado VERDE o ROJO y tres documentos: la resolución, el informe y la trazabilidad.
+- **Responde en pocos segundos.** En las pruebas reales el servidor respondió en menos de un segundo y el envío completo, desde una tableta, tomó menos de 3 segundos.
+- **Se puede enviar sin programar,** con una aplicación de Atajos HTTP en el celular o la tableta. Si la empresa lo desea, una inteligencia artificial puede ayudar a llenar el archivo y a interpretar el resultado.
+- **Tipos de empresa:** hay 23 tipos documentados; en el servidor real ya se comprobó el tipo industrial y los demás se irán probando uno a uno.
+- **Etapa:** pruebas y primeras empresas piloto. Todavía no hay empresas en producción.
+- **Las personas siguen siendo esenciales:** después del resultado, auditores, ingenieros y especialistas implementan la solución. CIAG no reemplaza la auditoría ni otros trabajos: es una herramienta para ellos y abre nuevos puestos de trabajo reales.
 
 ---
 
