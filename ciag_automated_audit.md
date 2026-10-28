@@ -1,8 +1,8 @@
 # CIAG — Auditoría Automática
 
-### CIAG GitHub Public — Versión 1.0
+### CIAG GitHub Public — Versión 1.2
 
-> ⚠️ **Nota sobre esta versión:** este documento forma parte de la primera versión pública (v1.0) del repositorio CIAG. Su contenido está sujeto a cambios y actualizaciones a medida que el proyecto avance en su implementación real con empresas, en base a la realidad operativa del sistema. Lo aquí descrito refleja el estado conceptual y arquitectónico actual del proyecto.
+> ⚠️ **Nota sobre esta versión:** este documento forma parte de la versión pública 1.2 del repositorio CIAG, actualizada el 26 de octubre de 2026: se amplía a 23 tipos de empresa y se agregan la misión y visión del proyecto y los canales públicos. El servicio .JSON ya responde en el servidor real. El contenido puede seguir cambiando a medida que el proyecto avance con empresas, en base a la realidad operativa del sistema.
 
 ---
 
@@ -10,13 +10,15 @@
 
 La auditoría automática es, en esencia, el propio sistema CIAG operando de forma continua en la nube: una plataforma que las empresas pueden consultar durante el día, y todos los días, sin depender de ciclos de revisión programados ni de la disponibilidad de un equipo humano dedicado exclusivamente a esa tarea.
 
-En la práctica, esto reemplaza el modelo tradicional de reuniones de auditoría y asesoría que pueden tomar semanas en programarse, ejecutarse y consolidarse en un informe. Con CIAG, esa misma necesidad —entender el estado real de la información, detectar riesgos, y apoyar la toma de decisiones— puede resolverse en el momento en que la empresa lo requiere, cuantas veces lo requiera.
+En la práctica, esto automatiza la parte repetitiva de la revisión, que en el modelo tradicional puede tomar semanas en programarse, ejecutarse y consolidarse en un informe. Con CIAG, esa misma necesidad —entender el estado real de la información, detectar riesgos, y apoyar la toma de decisiones— puede resolverse en **pocos segundos** (en las pruebas reales, menos de 3 segundos de extremo a extremo), en el momento en que la empresa lo requiere y cuantas veces lo requiera.
+
+**CIAG no reemplaza la auditoría ni a los auditores:** es una herramienta importante para ellos. Libera su tiempo de la revisión repetitiva para dedicarlo a lo que requiere criterio humano: analizar, decidir e implementar soluciones.
 
 Lo que distingue a esta auditoría automática de una revisión manual tradicional es que la información que entrega es:
 
 - **limpia** — estructurada y libre de ambigüedad, gracias al formato determinista de los contratos `.json`;
 - **trazable** — cada resultado puede reconstruirse y verificarse en cualquier momento posterior;
-- **matemáticamente sustentada** — no se basa en impresiones ni en criterios subjetivos, sino en reglas fijas aplicadas de forma consistente sobre la información recibida.
+- **basada en reglas fijas** — no se basa en impresiones ni en criterios subjetivos, sino en reglas aplicadas de forma consistente sobre la información recibida.
 
 ---
 
@@ -26,7 +28,7 @@ Uno de los cambios más importantes que introduce este modelo es la forma en que
 
 En un esquema tradicional, el ROI de una auditoría o una asesoría suele ser, en buena medida, una estimación: se proyecta un beneficio esperado, pero rara vez se puede observar de forma continua y verificable. Con la auditoría automática de CIAG, la organización puede consultar el estado de su información **cada día**, lo que permite observar el impacto del sistema sobre sus procesos de forma cercana al tiempo real, en lugar de depender de una proyección hecha una sola vez al inicio del proyecto.
 
-Esto también permite que los balances generales y las cifras internas de la empresa puedan actualizarse conforme a la situación real reflejada por la información que CIAG procesa, en lugar de depender exclusivamente de cortes de auditoría periódicos y ya desactualizados para cuando se revisan.
+Esto también ayuda a que la empresa revise sus cifras y procesos internos con la situación real reflejada por la información que envía, en lugar de depender exclusivamente de cortes de auditoría periódicos.
 
 Es importante aclarar que esto no constituye una garantía financiera ni una promesa de resultados específicos: lo que ofrece CIAG es una base de información continua, verificable y actualizada, sobre la cual la organización puede tomar sus propias decisiones financieras y operativas con mayor certeza.
 
@@ -53,10 +55,17 @@ Más allá del diagnóstico puntual, trabajar con CIAG mediante archivos `.json`
 
 - **Decisiones mejor fundamentadas** — al contar con información estructurada, verificable y actualizada, los responsables de cada área pueden tomar decisiones con mayor certeza y menor dependencia de estimaciones.
 - **Reducción de riesgos operativos** — la detección temprana de inconsistencias permite actuar antes de que un problema se convierta en un incidente mayor.
-- **Menor dependencia de auditorías puntuales y costosas** — la información queda disponible de forma continua, reduciendo la necesidad de procesos extensos y programados con mucha anticipación.
+- **Menor carga en la revisión repetitiva** — la información queda disponible de forma continua, y la auditoría se concentra en lo que requiere criterio humano.
+- **Nuevos puestos de trabajo reales** — alrededor de cada resultado, auditores, ingenieros y especialistas implementan la solución dentro de la empresa.
 - **Evidencia lista para reguladores y auditores externos** — la trazabilidad generada por CIAG facilita los procesos de cumplimiento normativo, sin necesidad de reconstruir manualmente el historial de decisiones.
 - **Adaptabilidad institucional** — tanto empresas privadas como entidades gubernamentales pueden ajustar el uso del sistema a su propia escala, sector y nivel de criticidad operativa.
 - **Fortalecimiento de la confianza institucional** — ante clientes, socios, inversionistas y organismos de control, contar con un sistema de gobernanza determinista y auditable es, en sí mismo, un elemento diferenciador.
+
+---
+
+## Después del resultado: trabajo de personas
+
+Recibir el resultado es el comienzo del trabajo. La empresa reúne a personas con experiencia y conocimiento real para implementar la solución indicada, y una inteligencia artificial puede ayudar, si se desea, a interpretar el resultado ya emitido (ver [`ciag_ai_assistant_role.md`](ciag_ai_assistant_role.md)). Las recomendaciones no se ejecutan solas: las personas deciden y actúan.
 
 ---
 
