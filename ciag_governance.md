@@ -1,8 +1,8 @@
 # CIAG — Gobernanza
 
-### CIAG GitHub Public — Versión 1.0
+### CIAG GitHub Public — Versión 1.2
 
-> ⚠️ **Nota sobre esta versión:** este documento forma parte de la primera versión pública (v1.0) del repositorio CIAG. Su contenido está sujeto a cambios y actualizaciones a medida que el proyecto avance en su implementación real con empresas, en base a la realidad operativa del sistema. Lo aquí descrito refleja el estado conceptual y arquitectónico actual del proyecto.
+> ⚠️ **Nota sobre esta versión:** este documento forma parte de la versión pública 1.2 del repositorio CIAG, actualizada el 26 de octubre de 2026: se amplía a 23 tipos de empresa y se agregan la misión y visión del proyecto y los canales públicos. El servicio .JSON ya responde en el servidor real. El contenido puede seguir cambiando a medida que el proyecto avance con empresas, en base a la realidad operativa del sistema.
 
 ---
 
@@ -16,7 +16,7 @@ Esta gobernanza no es un conjunto de configuraciones opcionales: es el marco que
 
 ## Un marco constitucional, no un conjunto de reglas sueltas
 
-CIAG no funciona como una colección de validaciones independientes. Funciona como un **marco constitucional**: un conjunto coherente de principios que se sostienen entre sí y que se aplican de manera uniforme desde el primer momento en que la información ingresa al sistema, hasta el último paso en que se entrega un resultado certificado a la empresa.
+CIAG no funciona como una colección de validaciones independientes. Funciona como un **marco constitucional**: un conjunto coherente de principios que se sostienen entre sí y que se aplican de manera uniforme desde el primer momento en que la información ingresa al sistema, hasta el último paso en que se entrega un resultado verificado a la empresa.
 
 Ese marco se organiza, en términos generales, alrededor de dos tipos de reglas:
 
@@ -43,7 +43,7 @@ CIAG no permite que una evaluación quede finalizada en estado de ambigüedad. T
 
 Uno de los principios más importantes de la gobernanza de CIAG es que **la inteligencia artificial no actúa como autoridad final de decisión**. Esa autoridad pertenece siempre a las personas responsables dentro de cada organización.
 
-CIAG no sustituye directivos, analistas, auditores ni especialistas. Su función es ofrecer información confiable, evaluar riesgos y garantizar que los procesos automatizados respeten las reglas establecidas — pero la decisión estratégica final, sobre qué hacer con esa información, siempre corresponde a las personas.
+CIAG no sustituye directivos, analistas, auditores ni especialistas, y un resultado VERDE no es una certificación ni una opinión legal. Su función es ofrecer información confiable, evaluar riesgos y garantizar que los procesos automatizados respeten las reglas establecidas — pero la decisión estratégica final, sobre qué hacer con esa información, siempre corresponde a las personas.
 
 ---
 
