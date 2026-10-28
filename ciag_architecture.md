@@ -1,8 +1,8 @@
 # CIAG — Arquitectura: CIAG-DX y CIAG-CORE
 
-### CIAG GitHub Public — Versión 1.0
+### CIAG GitHub Public — Versión 1.2
 
-> ⚠️ **Nota sobre esta versión:** este documento forma parte de la primera versión pública (v1.0) del repositorio CIAG. Su contenido está sujeto a cambios y actualizaciones a medida que el proyecto avance en su implementación real con empresas, en base a la realidad operativa del sistema. Lo aquí descrito refleja el estado conceptual y arquitectónico actual del proyecto.
+> ⚠️ **Nota sobre esta versión:** este documento forma parte de la versión pública 1.2 del repositorio CIAG, actualizada el 26 de octubre de 2026: se amplía a 23 tipos de empresa y se agregan la misión y visión del proyecto y los canales públicos. El servicio .JSON ya responde en el servidor real. El contenido puede seguir cambiando a medida que el proyecto avance con empresas, en base a la realidad operativa del sistema.
 
 ---
 
@@ -26,11 +26,11 @@ CIAG-DX **nunca ejecuta acciones correctivas ni modifica sistemas de la empresa*
 
 ## CIAG-CORE — Solución
 
-CIAG-CORE es el subsistema responsable de **decidir y actuar**.
+CIAG-CORE es el subsistema responsable de **evaluar y recomendar**.
 
-Una vez que CIAG-DX genera un diagnóstico, CIAG-CORE evalúa esa información bajo las reglas de gobernanza autorizadas y, cuando corresponde, ejecuta acciones correctivas de forma controlada, documentada y verificable.
+Una vez que CIAG-DX genera un diagnóstico, CIAG-CORE evalúa esa información bajo las reglas de gobernanza autorizadas y emite **recomendaciones** claras, documentadas y verificables sobre qué corregir.
 
-CIAG-CORE **nunca actúa sin un diagnóstico previo válido**, y su ejecución siempre queda registrada con evidencia completa de qué se hizo y por qué.
+CIAG-CORE **nunca actúa sin un diagnóstico previo válido**, y **no ejecuta cambios en los sistemas de la empresa**: recomienda, y son las personas responsables quienes deciden e implementan. Cada recomendación queda registrada con su evidencia.
 
 ---
 
@@ -39,21 +39,20 @@ CIAG-CORE **nunca actúa sin un diagnóstico previo válido**, y su ejecución s
 Separar diagnóstico y solución en dos subsistemas distintos aporta:
 
 - **verificación independiente** — quien detecta un problema no es quien decide ni ejecuta la corrección;
-- **menor riesgo de errores en cascada** — una corrección nunca se aplica sin haber sido evaluada primero;
+- **menor riesgo de errores en cascada** — una corrección nunca se recomienda sin haber sido evaluada primero;
 - **trazabilidad más clara** — es posible distinguir en todo momento qué fue análisis y qué fue acción real sobre el sistema;
 - **gobernanza más sólida** — cada subsistema opera dentro de límites estrictamente definidos, sin invadir el terreno del otro.
 
 ---
 
-## Cómo se activa cada subsistema: importante para entender el servicio
+## Cómo se contrata el servicio
 
-Es importante aclarar que **CIAG no opera con ambos subsistemas activos desde el primer contacto con una empresa**. El acceso a cada uno depende del tipo de servicio contratado:
+La empresa puede acceder al servicio de dos formas:
 
-- **Contrato inicial (diagnóstico):** una empresa que inicia su relación con CIAG accede, en primera instancia, únicamente a **CIAG-DX**. Durante este período —de 30 días— el sistema entrega diagnósticos reales sobre la información de la empresa, pero **no ejecuta ninguna remediación ni acción correctiva real**. Es una etapa de evaluación y conocimiento mutuo entre la empresa y la plataforma.
+- **Contrato de 30 días:** la empresa usa el servicio durante 30 días con sus propios archivos, y recibe en cada respuesta el diagnóstico y las recomendaciones. Es una etapa de evaluación y conocimiento mutuo entre la empresa y la plataforma.
+- **Licitación empresarial:** vigencia anual y renovable, con asesoría y reuniones periódicas para revisar los resultados y acompañar su implementación.
 
-- **Licitación empresarial (servicio completo):** el acceso a **CIAG-CORE** —es decir, la capacidad real de ejecutar correcciones— solo se habilita una vez que la empresa formaliza una **licitación empresarial**, con vigencia anual y renovable. Es en esta etapa donde CIAG-DX y CIAG-CORE operan juntos, de forma coordinada, ofreciendo el servicio completo de diagnóstico y solución.
-
-Esta distinción es importante porque evita una idea equivocada frecuente: **el servicio inicial no es el servicio completo.** El diagnóstico por sí solo ya aporta valor real a una organización, pero la capacidad de corrección automatizada y sostenida en el tiempo pertenece exclusivamente a la etapa de licitación empresarial formal.
+En ambos casos CIAG no cambia directamente los sistemas de la empresa: la solución la implementan las personas, con el apoyo opcional de una inteligencia artificial para interpretar el resultado. Esto abre trabajo real para auditores, ingenieros y especialistas.
 
 ---
 
