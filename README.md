@@ -1,11 +1,11 @@
 # CIAG
 ### Constitución de Inteligencia Artificial Global
 
-**CIAG GitHub Public — Versión 1.0**
+**CIAG GitHub Public — Versión 1.2**
 
 **Sistema de gobernanza computacional determinista para Inteligencia Artificial y software empresarial.**
 
-> ⚠️ **Nota sobre esta versión:** este repositorio se encuentra en su primera versión pública (v1.0). El contenido está sujeto a cambios y actualizaciones a medida que el proyecto CIAG avance en su implementación real con empresas, en base a la realidad operativa del sistema. La información aquí publicada refleja el estado conceptual y arquitectónico actual del proyecto, no un producto ya desplegado en producción a gran escala.
+> ⚠️ **Nota sobre esta versión:** este documento forma parte de la versión pública 1.2 del repositorio CIAG, actualizada el 26 de octubre de 2026: se amplía a 23 tipos de empresa y se agregan la misión y visión del proyecto y los canales públicos. El servicio .JSON ya responde en el servidor real. El contenido puede seguir cambiando a medida que el proyecto avance con empresas, en base a la realidad operativa del sistema.
 
 ---
 
@@ -14,6 +14,7 @@
 - [¿Qué es CIAG?](#qué-es-ciag)
 - [Principios fundamentales](#principios-fundamentales)
 - [Documentación pública](#documentación-pública)
+- [Misión y visión](#misión-y-visión)
 - [Estado del proyecto](#estado-del-proyecto)
 - [Autoría](#autoría)
 - [Contacto](#contacto)
@@ -23,7 +24,7 @@
 
 ## ¿Qué es CIAG?
 
-**CIAG no es un modelo de IA.** Es una capa de gobernanza computacional que supervisa, valida y certifica el comportamiento de sistemas de software e inteligencia artificial, transformando resultados probabilísticos en decisiones deterministas, auditables y trazables.
+**CIAG no es un modelo de IA.** Es una capa de gobernanza computacional que supervisa y valida el comportamiento de sistemas de software e inteligencia artificial, transformando resultados probabilísticos en decisiones deterministas, auditables y trazables.
 
 CIAG se integra junto a los sistemas de IA y software que una empresa ya utiliza, **sin reemplazarlos**. Su función es analizar, diagnosticar y —cuando corresponde— ayudar a corregir el comportamiento de esos sistemas bajo reglas fijas, verificables y reproducibles, comunicándose siempre mediante contratos computacionales en formato **JSON**.
 
@@ -60,20 +61,29 @@ Este repositorio contiene documentación de alto nivel sobre la arquitectura, fi
 | 6 | [`ciag_governance.md`](ciag_governance.md) | Principios de gobernanza y rol del ser humano |
 | 7 | [`ciag_json_contracts.md`](ciag_json_contracts.md) | Contratos computacionales JSON, a nivel conceptual |
 | 8 | [`ciag_regulatory_compliance.md`](ciag_regulatory_compliance.md) | Alineación con marcos regulatorios internacionales |
-| 9 | [`ciag_automated_audit.md`](ciag_automated_audit.md) | Qué es la auditoría automática y sus beneficios |
+| 9 | [`ciag_automated_audit.md`](ciag_automated_audit.md) | Qué es la auditoría automática, sus beneficios y por qué no reemplaza a los auditores |
 | 10 | [`ciag_security_model.md`](ciag_security_model.md) | Principios generales de seguridad |
-| 11 | [`ciag_ai_assistant_role.md`](ciag_ai_assistant_role.md) | Rol de la IA asistente en la implementación empresarial |
+| 11 | [`ciag_ai_assistant_role.md`](ciag_ai_assistant_role.md) | Rol de la IA asistente: ayudar a preparar el envío, interpretar el resultado y apoyar la implementación |
 | 12 | [`ciag_runtime_model.md`](ciag_runtime_model.md) | Estados operativos del sistema, a nivel conceptual |
-| 13 | [`ciag_enterprise_use_cases.md`](ciag_enterprise_use_cases.md) | Casos de uso por sector |
+| 13 | [`ciag_enterprise_use_cases.md`](ciag_enterprise_use_cases.md) | Casos de uso por sector y los 23 tipos de empresa |
 | 14 | [`ciag_contact.md`](ciag_contact.md) | Canales oficiales de contacto |
+| 15 | [`ciag_mission_vision.md`](ciag_mission_vision.md) | Misión y visión del proyecto |
 
 > 📌 Esta lista se irá ampliando conforme el proyecto avance.
 
 ---
 
+## Misión y visión
+
+**Misión:** construir los servicios de CIAG, incluido el servicio .JSON actual, aplicando el método científico, el sistema booleano (VERDE o ROJO), los consensos, la trazabilidad total y los mandamientos y pilares de los que nace CIAG, con la aspiración de que sea un estándar para proyectos de software.
+
+**Visión:** crear, en cinco años o más, una empresa tecnológica con varios servicios y soluciones. Los servicios se construyen uno a uno. Detalle en [`ciag_mission_vision.md`](ciag_mission_vision.md).
+
+---
+
 ## Estado del proyecto
 
-CIAG se encuentra en fase de consolidación arquitectónica y primeras implementaciones empresariales. El sistema está registrado ante la **Dirección Nacional de Derecho de Autor (DNDA)** de Colombia.
+CIAG se encuentra en fase de consolidación arquitectónica y primeras implementaciones empresariales. El servicio .JSON funciona en el servidor real y responde en pocos segundos. Los 23 tipos de empresa están documentados, y el tipo industrial ya se comprobó en el servidor real. El registro de derechos de autor ante la **Dirección Nacional de Derecho de Autor (DNDA)** de Colombia está en proceso.
 
 ---
 
@@ -82,6 +92,8 @@ CIAG se encuentra en fase de consolidación arquitectónica y primeras implement
 CIAG es un proyecto de investigación y desarrollo tecnológico creado y dirigido por **Yonatan Fernando Ramírez Becerra**.
 
 Perfil profesional: [linkedin.com/in/yonatan-fernando-ia](https://www.linkedin.com/in/yonatan-fernando-ia)
+
+Videos: [YouTube @yonatanramirezia](https://youtube.com/@yonatanramirezia) · Instagram [@ciag_determinismo](https://www.instagram.com/ciag_determinismo)
 
 ---
 
