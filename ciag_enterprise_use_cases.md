@@ -1,8 +1,8 @@
 # CIAG — Casos de Uso por Sector
 
-### CIAG GitHub Public — Versión 1.0
+### CIAG GitHub Public — Versión 1.2
 
-> ⚠️ **Nota sobre esta versión:** este documento forma parte de la primera versión pública (v1.0) del repositorio CIAG. Su contenido está sujeto a cambios y actualizaciones a medida que el proyecto avance en su implementación real con empresas, en base a la realidad operativa del sistema. Los casos de uso aquí descritos son de carácter general y no representan compromisos, cifras ni condiciones contractuales específicas.
+> ⚠️ **Nota sobre esta versión:** este documento forma parte de la versión pública 1.2 del repositorio CIAG, actualizada el 26 de octubre de 2026: se amplía a 23 tipos de empresa y se agregan la misión y visión del proyecto y los canales públicos. El servicio .JSON ya responde en el servidor real. El contenido puede seguir cambiando a medida que el proyecto avance con empresas, en base a la realidad operativa del sistema. Los casos de uso son de carácter general y no representan compromisos, cifras ni condiciones contractuales específicas.
 
 ---
 
@@ -11,6 +11,12 @@
 La arquitectura de CIAG fue diseñada para adaptarse a organizaciones de naturalezas muy distintas, mediante perfiles empresariales, contratos computacionales y políticas de gobernanza específicas para cada sector. Los principios fundamentales —determinismo, trazabilidad, auditabilidad e identidad semántica— permanecen constantes en todos los casos; lo que cambia es el contexto y las reglas particulares que se configuran según la actividad de cada organización.
 
 A continuación, un resumen general de cómo trabajar con CIAG mediante archivos `.json` puede beneficiar a distintos tipos de organización.
+
+---
+
+## Los 23 tipos de empresa
+
+El servicio tiene reglas y contexto propios para 23 tipos de empresa: banca, fintech, seguros, comercio, servicios profesionales, general, gobierno, defensa, educación, salud, energía, telecomunicaciones, transporte, logística, industria, semiconductores, medios, investigación, nube, programación, páginas web, inteligencia artificial y piloto. Todos están documentados; en el servidor real ya se comprobó el tipo industrial, y los demás se probarán uno a uno. A continuación se describen algunos ejemplos.
 
 ---
 
@@ -70,9 +76,15 @@ CIAG puede apoyar a las PYMES entregando diagnósticos claros y accesibles sobre
 
 ---
 
+## 🏭 Industria
+
+Las empresas industriales manejan procesos de producción, mantenimiento y seguridad operativa. Fue el tipo comprobado primero en el servidor real: una empresa de prueba recibió VERDE con información normal y ROJO ante un texto con inyección de código y ante un ataque combinado, en pocos segundos.
+
+---
+
 ## Un principio común a todos los sectores
 
-Sin importar el sector, el valor central que CIAG aporta es el mismo: convertir información dispersa, procesos manuales o decisiones basadas en estimaciones, en un proceso de diagnóstico y solución determinista, trazable y verificable — adaptado siempre al contexto, la criticidad y las necesidades regulatorias específicas de cada tipo de organización.
+Sin importar el sector, el valor central que CIAG aporta es el mismo: convertir información dispersa, procesos manuales o decisiones basadas en estimaciones, en un proceso de diagnóstico y solución determinista, trazable y verificable — adaptado siempre al contexto, la criticidad y las necesidades regulatorias específicas de cada tipo de organización. En todos los casos, después del resultado, son auditores, ingenieros y especialistas quienes implementan la solución, con la ayuda opcional de una inteligencia artificial para interpretarlo.
 
 ---
 
