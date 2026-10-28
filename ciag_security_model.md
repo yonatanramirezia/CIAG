@@ -1,8 +1,8 @@
 # CIAG — Modelo de Seguridad
 
-### CIAG GitHub Public — Versión 1.0
+### CIAG GitHub Public — Versión 1.2
 
-> ⚠️ **Nota sobre esta versión:** este documento forma parte de la primera versión pública (v1.0) del repositorio CIAG. Su contenido está sujeto a cambios y actualizaciones a medida que el proyecto avance en su implementación real con empresas, en base a la realidad operativa del sistema. Lo aquí descrito refleja el estado conceptual y arquitectónico actual del proyecto.
+> ⚠️ **Nota sobre esta versión:** este documento forma parte de la versión pública 1.2 del repositorio CIAG, actualizada el 26 de octubre de 2026: se amplía a 23 tipos de empresa y se agregan la misión y visión del proyecto y los canales públicos. El servicio .JSON ya responde en el servidor real. El contenido puede seguir cambiando a medida que el proyecto avance con empresas, en base a la realidad operativa del sistema.
 
 ---
 
@@ -21,7 +21,7 @@ Estos cuatro principios no son controles aislados: forman parte de la misma gobe
 
 ## Protección de datos: la información permanece bajo control de la empresa
 
-Uno de los principios de diseño más importantes de CIAG es que la información de una empresa **permanece dentro de su propio entorno controlado**. Las organizaciones trabajan con CIAG desde su propia infraestructura, apoyada en la plataforma en la nube sobre la que opera el sistema (actualmente Railway), sin que ello implique una pérdida de control sobre su información.
+Uno de los principios de diseño más importantes de CIAG es que la información de una empresa **permanece dentro de su propio entorno controlado**. La organización envía únicamente el archivo `CIAG_INPUT.json` al servicio, que opera en la nube (actualmente Railway), sin dar acceso a sus sistemas. No se deben enviar datos personales, contraseñas ni claves: la revisión no los necesita.
 
 Solo se procesa la información estrictamente necesaria para el análisis solicitado, siempre a través de los contratos computacionales oficiales, y nunca de forma abierta o sin estructura definida.
 
@@ -33,7 +33,7 @@ Este diseño está pensado para ser compatible con la normativa de protección d
 
 Es importante ser transparentes sobre un punto: **el propio proyecto CIAG fue construido con apoyo de herramientas de inteligencia artificial**, utilizadas durante su fase de investigación, documentación y desarrollo, siempre bajo la dirección, validación y criterio de su fundador. La inteligencia artificial fue una herramienta de apoyo en la construcción; las decisiones de arquitectura, gobernanza y diseño siempre fueron humanas.
 
-Dentro de la operación del sistema, la inteligencia artificial cumple también un rol de apoyo, no de autoridad. Una vez que la información de una empresa pasa por CIAG-DX y CIAG-CORE y se genera un resultado certificado en formato `.json`, una inteligencia artificial puede actuar como **asistente dentro de la empresa**, ayudando a traducir ese resultado técnico a un lenguaje más claro y orientando sobre cómo implementar lo indicado por el diagnóstico o la solución.
+Dentro de la operación del sistema, la inteligencia artificial cumple también un rol de apoyo, no de autoridad. Una vez que la información de una empresa pasa por CIAG-DX y CIAG-CORE y se genera un resultado verificado en formato `.json`, una inteligencia artificial puede actuar como **asistente dentro de la empresa**, ayudando a traducir ese resultado técnico a un lenguaje más claro y orientando sobre cómo implementar lo indicado por el diagnóstico o la solución.
 
 Este uso de la IA como asistente **nunca sustituye ni reinterpreta** el resultado determinista ya generado por CIAG: su función es exclusivamente facilitar la comprensión y la implementación práctica de ese resultado dentro de la organización, siempre bajo la supervisión de las personas responsables.
 
