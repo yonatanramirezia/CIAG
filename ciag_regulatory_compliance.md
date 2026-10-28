@@ -1,8 +1,8 @@
 # CIAG — Alineación con Marcos Regulatorios
 
-### CIAG GitHub Public — Versión 1.0
+### CIAG GitHub Public — Versión 1.2
 
-> ⚠️ **Nota sobre esta versión:** este documento forma parte de la primera versión pública (v1.0) del repositorio CIAG. Su contenido está sujeto a cambios y actualizaciones a medida que el proyecto avance en su implementación real con empresas, en base a la realidad operativa del sistema. Lo aquí descrito refleja el estado conceptual y arquitectónico actual del proyecto, y no constituye una certificación legal ni una garantía de cumplimiento normativo absoluto.
+> ⚠️ **Nota sobre esta versión:** este documento forma parte de la versión pública 1.2 del repositorio CIAG, actualizada el 26 de octubre de 2026: se amplía a 23 tipos de empresa y se agregan la misión y visión del proyecto y los canales públicos. El servicio .JSON ya responde en el servidor real. El contenido puede seguir cambiando a medida que el proyecto avance con empresas, en base a la realidad operativa del sistema. Lo aquí descrito no constituye una certificación legal ni una garantía de cumplimiento normativo absoluto.
 
 ---
 
