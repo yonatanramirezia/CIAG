@@ -1,8 +1,8 @@
 # CIAG — Modelo de Estados en Tiempo de Ejecución (Runtime)
 
-### CIAG GitHub Public — Versión 1.0
+### CIAG GitHub Public — Versión 1.2
 
-> ⚠️ **Nota sobre esta versión:** este documento forma parte de la primera versión pública (v1.0) del repositorio CIAG. Su contenido está sujeto a cambios y actualizaciones a medida que el proyecto avance en su implementación real con empresas, en base a la realidad operativa del sistema. Algunos aspectos aquí descritos corresponden al diseño arquitectónico del sistema y podrán ajustarse conforme el proyecto se lleve a la práctica en producción.
+> ⚠️ **Nota sobre esta versión:** este documento forma parte de la versión pública 1.2 del repositorio CIAG, actualizada el 26 de octubre de 2026: se amplía a 23 tipos de empresa y se agregan la misión y visión del proyecto y los canales públicos. El servicio .JSON ya responde en el servidor real. El contenido puede seguir cambiando a medida que el proyecto avance con empresas, en base a la realidad operativa del sistema.
 
 ---
 
@@ -26,7 +26,7 @@ Cuando una empresa envía información a CIAG mediante un contrato `.json`, esa 
 - ¿El resultado final generado por el sistema es **estable y correcto**, o requiere una revisión adicional?
 - ¿Cuántas veces pasó esa información por el proceso de diagnóstico y corrección?
 
-Sobre este último punto: la arquitectura de CIAG está diseñada bajo un modelo de **hasta tres iteraciones** por evaluación:
+Sobre este último punto: la arquitectura de CIAG está diseñada (a nivel de diseño) bajo un modelo de **hasta tres iteraciones** por evaluación:
 
 1. **Diagnóstico** — análisis inicial y detección de hallazgos.
 2. **Corrección** — aplicación de la solución correspondiente, cuando aplica.
@@ -58,9 +58,15 @@ Este mecanismo protege tanto la integridad del sistema como la relación contrac
 Separar el estado de una evaluación del estado contractual de la empresa permite que ambos aspectos se gobiernen con reglas propias y consistentes:
 
 - una evaluación puede fallar por razones técnicas (información incompleta, inconsistencias detectadas) sin que eso afecte el estado contractual de la empresa;
-- una empresa puede tener su acceso restringido por razones administrativas o de incumplimiento, sin que eso invalide evaluaciones previas ya certificadas.
+- una empresa puede tener su acceso restringido por razones administrativas o de incumplimiento, sin que eso invalide evaluaciones previas ya emitidas.
 
 Esta separación es coherente con el mismo principio de determinismo y gobernanza que rige el resto del sistema: cada dimensión del estado se evalúa de forma independiente, con sus propias reglas, y ninguna de ellas se mezcla ni se decide "a criterio" en el momento.
+
+---
+
+## En el servicio actual
+
+Hoy una empresa puede enviar revisiones solo si está **registrada y con contrato activo**; si el acceso no está vigente (por ejemplo, plazo vencido o pago pendiente), el servicio rechaza la revisión e indica que debe regularizarse. Cada revisión recibe un número de seguimiento propio y responde en pocos segundos.
 
 ---
 
