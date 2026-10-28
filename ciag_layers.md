@@ -1,8 +1,8 @@
 # CIAG — Capas del Sistema
 
-### CIAG GitHub Public — Versión 1.0
+### CIAG GitHub Public — Versión 1.2
 
-> ⚠️ **Nota sobre esta versión:** este documento forma parte de la primera versión pública (v1.0) del repositorio CIAG. Su contenido está sujeto a cambios y actualizaciones a medida que el proyecto avance en su implementación real con empresas, en base a la realidad operativa del sistema. Lo aquí descrito refleja el estado conceptual y arquitectónico actual del proyecto.
+> ⚠️ **Nota sobre esta versión:** este documento forma parte de la versión pública 1.2 del repositorio CIAG, actualizada el 26 de octubre de 2026: se amplía a 23 tipos de empresa y se agregan la misión y visión del proyecto y los canales públicos. El servicio .JSON ya responde en el servidor real. El contenido puede seguir cambiando a medida que el proyecto avance con empresas, en base a la realidad operativa del sistema.
 
 ---
 
@@ -40,8 +40,14 @@ A continuación, un resumen general del propósito de cada capa, sin entrar en d
 
 ---
 
+## Cómo se refleja en el servicio actual
+
+En el servicio que hoy responde en el servidor real, varios revisores especializados, distribuidos en estas capas, votan cada uno únicamente VERDE o ROJO, y el resultado final se decide por conjunción: si una regla obligatoria falla, el resultado es ROJO. Otros revisores aportan información adicional sin contar en el voto. Todo el recorrido toma pocos segundos.
+
+---
+
 ## El flujo general
 
-Estas capas no operan de forma aislada: siguen un flujo ordenado y obligatorio, desde que la información ingresa al sistema hasta que se entrega un resultado certificado a la empresa.
+Estas capas no operan de forma aislada: siguen un flujo ordenado y obligatorio, desde que la información ingresa al sistema hasta que se entrega un resultado verificado a la empresa.
 
 Para más información sobre ese flujo, ver [`ciag_pipeline.md`](ciag_pipeline.md). Para más información sobre la separación entre diagnóstico y solución, ver [`ciag_architecture.md`](ciag_architecture.md).
