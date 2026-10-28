@@ -1,8 +1,8 @@
 # CIAG — Determinismo
 
-### CIAG GitHub Public — Versión 1.0
+### CIAG GitHub Public — Versión 1.2
 
-> ⚠️ **Nota sobre esta versión:** este documento forma parte de la primera versión pública (v1.0) del repositorio CIAG. Su contenido está sujeto a cambios y actualizaciones a medida que el proyecto avance en su implementación real con empresas, en base a la realidad operativa del sistema. Lo aquí descrito refleja el estado conceptual y arquitectónico actual del proyecto.
+> ⚠️ **Nota sobre esta versión:** este documento forma parte de la versión pública 1.2 del repositorio CIAG, actualizada el 26 de octubre de 2026: se amplía a 23 tipos de empresa y se agregan la misión y visión del proyecto y los canales públicos. El servicio .JSON ya responde en el servidor real. El contenido puede seguir cambiando a medida que el proyecto avance con empresas, en base a la realidad operativa del sistema.
 
 ---
 
@@ -36,6 +36,12 @@ Para que un sistema sea realmente útil en la toma de decisiones, su resultado f
 - **ROJO** — CIAG ha detectado una condición que requiere atención antes de continuar con el proceso evaluado.
 
 Es importante aclarar que un resultado ROJO no significa automáticamente un error grave o una falla: significa que el sistema identificó una situación que debe revisarse para reducir riesgos y mantener la integridad de la operación. El objetivo de esta clasificación es facilitar decisiones rápidas, claras y respaldadas por un proceso de evaluación determinista, en lugar de dejar la interpretación del resultado a criterios subjetivos.
+
+---
+
+## Qué se repite exactamente
+
+En las pruebas del servicio real, al enviar el mismo archivo varias veces se repiten el resultado (VERDE o ROJO), las huellas de verificación de la entrada y de los hallazgos, y la decisión de consenso. Lo único que cambia en cada envío es el **número de seguimiento** y la firma del veredicto, porque cada revisión queda registrada como un hecho nuevo e independiente. Ante una duda razonable, el resultado es ROJO.
 
 ---
 
